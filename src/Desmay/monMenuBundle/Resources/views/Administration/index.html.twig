@@ -1,0 +1,52 @@
+{% extends 'DesmaymonMenuBundle::Layout.html.twig' %}
+
+{% block title %}
+    Administration des Membres - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <div class='container'>
+        <table id="users">
+            <thead>
+                <tr>
+                    <th data-field="id">ID</th>
+                    <th data-field="id">Pseudo</th>
+                    <th data-field="id">Email</th>
+                    <th data-field="id">BirthDay</th>
+                    <th data-field="id">Last Visit</th>
+                    <th data-field="id">Creation Date</th>
+                    <th data-field="id">Action</th>
+                </tr>
+            </thead> 
+            <tfoot>
+                <tr>
+                    <th data-field="id">ID</th>
+                    <th data-field="id">Pseudo</th>
+                    <th data-field="id">Email</th>
+                    <th data-field="id">BirthDay</th>
+                    <th data-field="id">Last Visit</th>
+                    <th data-field="id">Creation Date</th>
+                    <th data-field="id">Action</th>
+                </tr>
+            </tfoot> 
+            <tbody>
+                {% for user in users %}
+                    <tr role="row">
+                        <td id="{{ user.id }}">{{ user.id }}</td>
+                        <td id="{{ user.id }}">{{ user.username }}</td>
+                        <td id="{{ user.id }}">{{ user.email }}</td>
+                        <td id="{{ user.id }}">{{ user.dateborn|date("m/d/Y") }}</td>
+                        <td id="{{ user.id }}">{{ user.lastLogin|date("m/d/Y") }}</td>
+                        <td id="{{ user.id }}">{{ user.datecreate|date("m/d/Y") }}</td>
+                        <td id="{{ user.id }}">
+                            <a href="{{ path('mon_menu_administration_roles', {'user' : user.username } ) }}"><i alt='test' class="small material-icons">star</i></a>
+                            <a href=""><i class="small material-icons">assignment_ind</i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+    {% endblock %}

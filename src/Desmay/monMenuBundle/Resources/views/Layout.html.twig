@@ -1,0 +1,45 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {% stylesheets filter='cssrewrite'
+'@DesmaymonMenuBundle/Resources/public/css/style.css' %}
+    <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+    {% endstylesheets %}
+{% endblock %}
+
+{% block header %}
+    <header>
+        <div id='index-banner' class='section'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col s12 m9'>
+                        <h1 class='header center-on-small-only'>
+                            {% block titlePage %}Mon Menu{% endblock %}
+                        </h1>
+                        <h4 class='light red-text text-lighten-4 center-on-small-only'>
+                            {% block wordingPage %}Générer vos repas de la semaine en un seul click.{% endblock %}
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block nav %}
+    {% include 'DesmaymonMenuBundle::nav.html.twig' %}
+{% endblock %}
+
+{% block body %}
+{% endblock %}
+
+
+{% block footer %}
+    {% include 'DesmaymonMenuBundle::footer.html.twig' %}
+{% endblock %}
+
+{% block javascripts %}
+    {% javascripts '@DesmaymonMenuBundle/Resources/public/js/javascript.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}

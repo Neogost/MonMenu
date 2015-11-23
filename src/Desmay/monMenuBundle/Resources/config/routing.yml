@@ -1,0 +1,17 @@
+mon_menu_homepage:
+    path:   /
+    defaults: { _controller: DesmaymonMenuBundle:Menu:index }
+    
+    
+add_recipe:
+    path:   /add/Recipe
+    defaults: { _controller: DesmaymonMenuBundle:Recipe:add }
+    
+    
+mon_menu_administration:
+    path: /Administration
+    defaults: { _controller: DesmaymonMenuBundle:Administration:index }
+    
+mon_menu_administration_roles:
+    path: /Administration/{user}/Roles
+    defaults: { _controller: DesmaymonMenuBundle:Administration:roles }

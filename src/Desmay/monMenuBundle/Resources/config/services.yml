@@ -1,0 +1,7 @@
+parameters:
+#    desmaymon_menu.example.class: Desmay\monMenuBundle\Example
+
+services:
+#    desmaymon_menu.example:
+#        class: %desmaymon_menu.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

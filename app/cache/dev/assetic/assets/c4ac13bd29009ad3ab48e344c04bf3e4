@@ -1,0 +1,22 @@
+
+/* 
+    Created on : 7 nov. 2015, 15:45:14
+    Author     : Kevin Desmay
+*/
+
+#index-banner {
+    background-color: #EE6E73; 
+}
+#nav-mobile li.search {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 120px;
+    margin-top: 1px;
+    padding: 1px 0px 0px;
+    z-index: 2;
+}
+
+#users_length label select {
+    display: block;
+}
