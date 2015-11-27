@@ -162,20 +162,28 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Desmay\\monMenuBundle\\Controller\\MenuController::indexAction',  '_route' => 'mon_menu_homepage',);
         }
 
-        // add_recipe
-        if ($pathinfo === '/add/Recipe') {
-            return array (  '_controller' => 'Desmay\\monMenuBundle\\Controller\\RecipeController::addAction',  '_route' => 'add_recipe',);
+        if (0 === strpos($pathinfo, '/add')) {
+            // add_recipe
+            if ($pathinfo === '/add/Recipe') {
+                return array (  '_controller' => 'Desmay\\monMenuBundle\\Controller\\RecipeController::addAction',  '_route' => 'add_recipe',);
+            }
+
+            // add_category
+            if ($pathinfo === '/add/Category') {
+                return array (  '_controller' => 'Desmay\\monMenuBundle\\Controller\\CategoryController::addAction',  '_route' => 'add_category',);
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/Administration')) {
             // mon_menu_administration
             if ($pathinfo === '/Administration') {
-                return array (  '_controller' => 'Desmay\\monMenuBundle\\Controller\\AdministrationController::indexAction',  '_route' => 'mon_menu_administration',);
+                return array (  '_controller' => 'DesmaymonMenuBundle:Administration:index',  '_route' => 'mon_menu_administration',);
             }
 
             // mon_menu_administration_roles
             if (preg_match('#^/Administration/(?P<user>[^/]++)/Roles$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'mon_menu_administration_roles')), array (  '_controller' => 'Desmay\\monMenuBundle\\Controller\\AdministrationController::rolesAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'mon_menu_administration_roles')), array (  '_controller' => 'DesmaymonMenuBundle:Administration:roles',));
             }
 
         }

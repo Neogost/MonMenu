@@ -6,7 +6,10 @@ mon_menu_homepage:
 add_recipe:
     path:   /add/Recipe
     defaults: { _controller: DesmaymonMenuBundle:Recipe:add }
-    
+
+add_category:
+    path:   /add/Category
+    defaults: { _controller: DesmaymonMenuBundle:Category:add }
     
 mon_menu_administration:
     path: /Administration

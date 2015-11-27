@@ -1,17 +1,27 @@
 
 <ul id="my_recipe" class="dropdown-content">
-    <li><a href="{{ path('add_recipe') }}">Ajouter</a></li>
-    <li><a href="#!">Modifier</a></li>
+    <li><a href="{{ path('add_recipe') }}">Add</a></li>
+    <li><a href="#!">Edit</a></li>
         {% if is_granted("ROLE_MODERATOR") or is_granted("ROLE_ADMIN") %}
-        <li><a href="#!">Supprimer</a></li>
+        <li><a href="#!">Delete</a></li>
         {% endif %}
 </ul>
 <ul id="my_recipe_mobile" class="dropdown-content">
-    <li><a href="{{ path('add_recipe') }}">Ajouter</a></li>
-    <li><a href="#!">Modifier</a></li>
+    <li><a href="{{ path('add_recipe') }}">Add</a></li>
+    <li><a href="#!">Edit</a></li>
         {% if is_granted("ROLE_MODERATOR") or is_granted("ROLE_ADMIN") %}
-        <li><a href="#!">Supprimer</a></li>
+        <li><a href="#!">Delete</a></li>
         {% endif %}
+</ul>
+<ul id="my_category" class="dropdown-content">
+    <li><a href="{{ path('add_category') }}">Add</a></li>
+    <li><a href="#!">Edit</a></li>
+    <li><a href="#!">Delete</a></li>
+</ul>
+<ul id="my_categoty_mobile" class="dropdown-content">
+    <li><a href="{{ path('add_category') }}">Add</a></li>
+    <li><a href="#!">Edit</a></li>
+    <li><a href="#!">Delete</a></li>
 </ul>
 <nav>
     <ul class="right hide-on-med-and-down">
@@ -24,11 +34,14 @@
             <li><a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a></li>
             {% endif %}
             {% if is_granted("ROLE_ADMIN") %}
-            <li><a href="{{ path('mon_menu_administration') }}">Administration des Membres</a></li>
+            <li><a href="{{ path('mon_menu_administration') }}">Directors Members</a></li>
             {% endif %}
-        <li><a href="#!">Ma Semaine</a></li>
-        <li><a href="#!">Ma Liste de Course</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="my_recipe">Mes Recettes<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#!">My Week</a></li>
+        <li><a href="#!">My shopping list</a></li>
+            {% if is_granted("ROLE_MODERATOR") %}
+            <li><a class="dropdown-button" href="#!" data-activates="my_category">Category<i class="material-icons right">arrow_drop_down</i></a></li>
+            {% endif %}
+        <li><a class="dropdown-button" href="#!" data-activates="my_recipe">My Repices<i class="material-icons right">arrow_drop_down</i></a></li>
     </ul>
     <ul id="slide-out" class="side-nav">
         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
@@ -40,11 +53,11 @@
             <li><a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a></li>
             {% endif %}
             {% if is_granted("ROLE_ADMIN") %}
-            <li><a href="{{ path('mon_menu_administration') }}">Administration des Membres</a></li>
+            <li><a href="{{ path('mon_menu_administration') }}">Directors Members</a></li>
             {% endif %}
-        <li><a href="#!">Ma Semaine</a></li>
-        <li><a href="#!">Ma Liste de Course</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="my_recipe_mobile">Mes Recettes<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="#!">My Week</a></li>
+        <li><a href="#!">My shopping list</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="my_recipe_mobile">My Repices<i class="material-icons right">arrow_drop_down</i></a></li>
 
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>

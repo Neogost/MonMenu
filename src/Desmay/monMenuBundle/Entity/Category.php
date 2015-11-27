@@ -35,6 +35,22 @@ class Category
      */
     private $idcategory;
 
-
+    public function setWording($wording) {
+        $this->wording = $wording;
+        return $this;
+    }
+    
+    public function getWording() {
+        return $this->wording;
+    }
+    
+    public function setArchive($archive) {
+        $this->archive = $archive;
+        return $this;
+    }
+    
+    public function getArchive() {
+        return $this->archive;
+    }
 }
 

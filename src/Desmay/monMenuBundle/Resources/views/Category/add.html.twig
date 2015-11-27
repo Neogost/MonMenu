@@ -1,0 +1,46 @@
+{% extends 'DesmaymonMenuBundle::Layout.html.twig' %}
+
+{% block titlePage %}
+    Add a Category  
+{% endblock %}
+
+{% block wordingPage %}
+    Add a new Category!
+{% endblock %}
+
+{% block body %}
+    <div class='container' >
+        <div class='row' >
+            <div class='col s3'>
+                {{ form_start(form) }}
+                {{ form_errors(form) }}
+                <div class='row'>
+                    <div class='input-field'>
+                        {{ form_row(form.wording, {'attr': {'length': '30'}}) }}
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col s6 offset-s6'>
+                        {{ form_row(form.submit, {'attr': {'class': 'btn waves-effect waves-light'}}) }}
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+            <div class='col s6 offset-s3'>
+                <h4>
+                    Category List :
+                </h4>
+
+                {% for category in categories %}
+                <div class="chip">
+                    {{ category.wording }}
+                    <i class="material-icons">close</i>
+                </div>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

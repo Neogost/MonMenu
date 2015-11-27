@@ -23,55 +23,54 @@ class __TwigTemplate_21f5b5341455cc97c262bfc590eb6c5985e2e2da90986b8ef1192021731
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_90e496bfc1907f3f2cc26d46d033d0e6339ca52cf2728bd5c3add7633c3f28c5 = $this->env->getExtension("native_profiler");
-        $__internal_90e496bfc1907f3f2cc26d46d033d0e6339ca52cf2728bd5c3add7633c3f28c5->enter($__internal_90e496bfc1907f3f2cc26d46d033d0e6339ca52cf2728bd5c3add7633c3f28c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "DesmaymonMenuBundle:Recipe:add.html.twig"));
+        $__internal_450bf30bec5994bab4ed79836f62c38bfb7457e314765907d0eafec27bbfec66 = $this->env->getExtension("native_profiler");
+        $__internal_450bf30bec5994bab4ed79836f62c38bfb7457e314765907d0eafec27bbfec66->enter($__internal_450bf30bec5994bab4ed79836f62c38bfb7457e314765907d0eafec27bbfec66_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "DesmaymonMenuBundle:Recipe:add.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_90e496bfc1907f3f2cc26d46d033d0e6339ca52cf2728bd5c3add7633c3f28c5->leave($__internal_90e496bfc1907f3f2cc26d46d033d0e6339ca52cf2728bd5c3add7633c3f28c5_prof);
+        $__internal_450bf30bec5994bab4ed79836f62c38bfb7457e314765907d0eafec27bbfec66->leave($__internal_450bf30bec5994bab4ed79836f62c38bfb7457e314765907d0eafec27bbfec66_prof);
 
     }
 
     // line 3
     public function block_titlePage($context, array $blocks = array())
     {
-        $__internal_c77f18b7470ec3cc7c69a77b17b1951cdbaaa988ab57fd28d172eee069207e68 = $this->env->getExtension("native_profiler");
-        $__internal_c77f18b7470ec3cc7c69a77b17b1951cdbaaa988ab57fd28d172eee069207e68->enter($__internal_c77f18b7470ec3cc7c69a77b17b1951cdbaaa988ab57fd28d172eee069207e68_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "titlePage"));
+        $__internal_2100dd2e3ba1a4376132ab65cd7265c2009e92c9f69c15ff77fa686bc09b52eb = $this->env->getExtension("native_profiler");
+        $__internal_2100dd2e3ba1a4376132ab65cd7265c2009e92c9f69c15ff77fa686bc09b52eb->enter($__internal_2100dd2e3ba1a4376132ab65cd7265c2009e92c9f69c15ff77fa686bc09b52eb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "titlePage"));
 
         // line 4
         echo "    Ajouter une Recette  
 ";
         
-        $__internal_c77f18b7470ec3cc7c69a77b17b1951cdbaaa988ab57fd28d172eee069207e68->leave($__internal_c77f18b7470ec3cc7c69a77b17b1951cdbaaa988ab57fd28d172eee069207e68_prof);
+        $__internal_2100dd2e3ba1a4376132ab65cd7265c2009e92c9f69c15ff77fa686bc09b52eb->leave($__internal_2100dd2e3ba1a4376132ab65cd7265c2009e92c9f69c15ff77fa686bc09b52eb_prof);
 
     }
 
     // line 7
     public function block_wordingPage($context, array $blocks = array())
     {
-        $__internal_9012a508fef9ef1cd7995c07f401cbe504d0ea4c016d14005d61697c44d36ce5 = $this->env->getExtension("native_profiler");
-        $__internal_9012a508fef9ef1cd7995c07f401cbe504d0ea4c016d14005d61697c44d36ce5->enter($__internal_9012a508fef9ef1cd7995c07f401cbe504d0ea4c016d14005d61697c44d36ce5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "wordingPage"));
+        $__internal_c4c1f0a1ae5eed4cdaf3ba678c5d4772dec4b5aa09a8d490e572c23cfc1140a5 = $this->env->getExtension("native_profiler");
+        $__internal_c4c1f0a1ae5eed4cdaf3ba678c5d4772dec4b5aa09a8d490e572c23cfc1140a5->enter($__internal_c4c1f0a1ae5eed4cdaf3ba678c5d4772dec4b5aa09a8d490e572c23cfc1140a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "wordingPage"));
 
         // line 8
         echo "    Ajouter vos nouvelles recettes !
 ";
         
-        $__internal_9012a508fef9ef1cd7995c07f401cbe504d0ea4c016d14005d61697c44d36ce5->leave($__internal_9012a508fef9ef1cd7995c07f401cbe504d0ea4c016d14005d61697c44d36ce5_prof);
+        $__internal_c4c1f0a1ae5eed4cdaf3ba678c5d4772dec4b5aa09a8d490e572c23cfc1140a5->leave($__internal_c4c1f0a1ae5eed4cdaf3ba678c5d4772dec4b5aa09a8d490e572c23cfc1140a5_prof);
 
     }
 
     // line 11
     public function block_body($context, array $blocks = array())
     {
-        $__internal_fb189f8533aa99a0dbc270d97badae095b94b4a29f363dc60b755dbad4bdbe19 = $this->env->getExtension("native_profiler");
-        $__internal_fb189f8533aa99a0dbc270d97badae095b94b4a29f363dc60b755dbad4bdbe19->enter($__internal_fb189f8533aa99a0dbc270d97badae095b94b4a29f363dc60b755dbad4bdbe19_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_2e3867a4e48e8a9653e250b61208ca166f7c437f9842165acefb235907335285 = $this->env->getExtension("native_profiler");
+        $__internal_2e3867a4e48e8a9653e250b61208ca166f7c437f9842165acefb235907335285->enter($__internal_2e3867a4e48e8a9653e250b61208ca166f7c437f9842165acefb235907335285_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 12
         echo "
     <div class='container' >
         <form>
             <div class='row' >
-
                 <div class=\"input-field col s6\">
                     <input id=\"first_name\" type=\"text\" class=\"validate\" length=\"60\"/>
                     <label for=\"description\">Short Description</label>
@@ -88,6 +87,8 @@ class __TwigTemplate_21f5b5341455cc97c262bfc590eb6c5985e2e2da90986b8ef1192021731
                         <input type=\"range\" id=\"difficulty\" min=\"0\" max=\"5\" />
                     </p>
                 </div>
+            </div>
+            <div class='row' >
                 <div class=\"input-field col s12\">
                     <textarea id=\"description\" class=\"materialize-textarea\"></textarea>
                     <label for=\"description\">Description</label>
@@ -105,7 +106,7 @@ class __TwigTemplate_21f5b5341455cc97c262bfc590eb6c5985e2e2da90986b8ef1192021731
 
 ";
         
-        $__internal_fb189f8533aa99a0dbc270d97badae095b94b4a29f363dc60b755dbad4bdbe19->leave($__internal_fb189f8533aa99a0dbc270d97badae095b94b4a29f363dc60b755dbad4bdbe19_prof);
+        $__internal_2e3867a4e48e8a9653e250b61208ca166f7c437f9842165acefb235907335285->leave($__internal_2e3867a4e48e8a9653e250b61208ca166f7c437f9842165acefb235907335285_prof);
 
     }
 
@@ -139,7 +140,6 @@ class __TwigTemplate_21f5b5341455cc97c262bfc590eb6c5985e2e2da90986b8ef1192021731
 /*     <div class='container' >*/
 /*         <form>*/
 /*             <div class='row' >*/
-/* */
 /*                 <div class="input-field col s6">*/
 /*                     <input id="first_name" type="text" class="validate" length="60"/>*/
 /*                     <label for="description">Short Description</label>*/
@@ -156,6 +156,8 @@ class __TwigTemplate_21f5b5341455cc97c262bfc590eb6c5985e2e2da90986b8ef1192021731
 /*                         <input type="range" id="difficulty" min="0" max="5" />*/
 /*                     </p>*/
 /*                 </div>*/
+/*             </div>*/
+/*             <div class='row' >*/
 /*                 <div class="input-field col s12">*/
 /*                     <textarea id="description" class="materialize-textarea"></textarea>*/
 /*                     <label for="description">Description</label>*/
