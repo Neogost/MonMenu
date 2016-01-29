@@ -40,7 +40,7 @@ class __TwigTemplate_ad14258a198129296daadc5751c01a7484d089aa673011450c86f67d212
     {
         // line 8
         echo "    <div class='container'>
-            <h5 class='card-stats-title'>Lundi</h5>
+        <h5 class='card-stats-title'>Lundi</h5>
         <ul class=\"collapsible popout dropper\" data-collapsible=\"expandable\">
             <li  class='draggable' draggable='true'>
                 <div class=\"collapsible-header\" ><i class=\"material-icons\">filter_drama</i>Dejeuner</div>
@@ -175,7 +175,7 @@ class __TwigTemplate_ad14258a198129296daadc5751c01a7484d089aa673011450c86f67d212
 /* */
 /* {% block body %}*/
 /*     <div class='container'>*/
-/*             <h5 class='card-stats-title'>Lundi</h5>*/
+/*         <h5 class='card-stats-title'>Lundi</h5>*/
 /*         <ul class="collapsible popout dropper" data-collapsible="expandable">*/
 /*             <li  class='draggable' draggable='true'>*/
 /*                 <div class="collapsible-header" ><i class="material-icons">filter_drama</i>Dejeuner</div>*/

@@ -64,10 +64,10 @@ class Country extends \Desmay\monMenuBundle\Entity\Country implements \Doctrine\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Country' . "\0" . 'idcountry', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Country' . "\0" . 'wording');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Country' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Country' . "\0" . 'idcountry');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Country' . "\0" . 'idcountry', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Country' . "\0" . 'wording');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Country' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Country' . "\0" . 'idcountry');
     }
 
     /**
@@ -173,41 +173,4 @@ class Country extends \Desmay\monMenuBundle\Entity\Country implements \Doctrine\
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdcountry()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdcountry();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdcountry', array());
-
-        return parent::getIdcountry();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setWording($wording)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setWording', array($wording));
-
-        return parent::setWording($wording);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getWording()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getWording', array());
-
-        return parent::getWording();
-    }
-
 }

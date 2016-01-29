@@ -64,10 +64,10 @@ class Budget extends \Desmay\monMenuBundle\Entity\Budget implements \Doctrine\OR
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Budget' . "\0" . 'idbudget', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Budget' . "\0" . 'wording');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Budget' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Budget' . "\0" . 'idbudget');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Budget' . "\0" . 'idbudget', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Budget' . "\0" . 'wording');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Budget' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Budget' . "\0" . 'idbudget');
     }
 
     /**
@@ -173,41 +173,4 @@ class Budget extends \Desmay\monMenuBundle\Entity\Budget implements \Doctrine\OR
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdbudget()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdbudget();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdbudget', array());
-
-        return parent::getIdbudget();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setWording($wording)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setWording', array($wording));
-
-        return parent::setWording($wording);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getWording()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getWording', array());
-
-        return parent::getWording();
-    }
-
 }

@@ -64,10 +64,10 @@ class RecipeUstencile extends \Desmay\monMenuBundle\Entity\RecipeUstencile imple
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idrecipeustencile', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idustencile');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idustencile', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idrecipeustencile');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idrecipeustencile', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idustencile');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idustencile', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeUstencile' . "\0" . 'idrecipeustencile');
     }
 
     /**
@@ -173,63 +173,4 @@ class RecipeUstencile extends \Desmay\monMenuBundle\Entity\RecipeUstencile imple
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdrecipeustencile()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdrecipeustencile();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdrecipeustencile', array());
-
-        return parent::getIdrecipeustencile();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIdrecipe($idrecipe)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdrecipe', array($idrecipe));
-
-        return parent::setIdrecipe($idrecipe);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdrecipe()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdrecipe', array());
-
-        return parent::getIdrecipe();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIdustencile($idustencile)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdustencile', array($idustencile));
-
-        return parent::setIdustencile($idustencile);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdustencile()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdustencile', array());
-
-        return parent::getIdustencile();
-    }
-
 }

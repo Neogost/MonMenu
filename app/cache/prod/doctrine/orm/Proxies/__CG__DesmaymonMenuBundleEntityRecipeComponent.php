@@ -64,10 +64,10 @@ class RecipeComponent extends \Desmay\monMenuBundle\Entity\RecipeComponent imple
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idrecipecomponent', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idcomponent');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idcomponent', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idrecipecomponent');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idrecipecomponent', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idcomponent');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idcomponent', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\RecipeComponent' . "\0" . 'idrecipecomponent');
     }
 
     /**
@@ -173,63 +173,4 @@ class RecipeComponent extends \Desmay\monMenuBundle\Entity\RecipeComponent imple
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdrecipecomponent()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdrecipecomponent();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdrecipecomponent', array());
-
-        return parent::getIdrecipecomponent();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIdrecipe($idrecipe)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdrecipe', array($idrecipe));
-
-        return parent::setIdrecipe($idrecipe);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdrecipe()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdrecipe', array());
-
-        return parent::getIdrecipe();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIdcomponent($idcomponent)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdcomponent', array($idcomponent));
-
-        return parent::setIdcomponent($idcomponent);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdcomponent()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdcomponent', array());
-
-        return parent::getIdcomponent();
-    }
-
 }

@@ -64,10 +64,10 @@ class WeekDay extends \Desmay\monMenuBundle\Entity\WeekDay implements \Doctrine\
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idweekday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idweek', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'nbday');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idweek', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'nbday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idweekday');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idweekday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idweek', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'nbday');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idweek', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'nbday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\WeekDay' . "\0" . 'idweekday');
     }
 
     /**
@@ -173,85 +173,4 @@ class WeekDay extends \Desmay\monMenuBundle\Entity\WeekDay implements \Doctrine\
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdweekday()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdweekday();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdweekday', array());
-
-        return parent::getIdweekday();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIdweek($idweek)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdweek', array($idweek));
-
-        return parent::setIdweek($idweek);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdweek()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdweek', array());
-
-        return parent::getIdweek();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIdday($idday)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdday', array($idday));
-
-        return parent::setIdday($idday);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdday()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdday', array());
-
-        return parent::getIdday();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setNbday($nbday)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNbday', array($nbday));
-
-        return parent::setNbday($nbday);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNbday()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNbday', array());
-
-        return parent::getNbday();
-    }
-
 }

@@ -64,10 +64,10 @@ class Ustencile extends \Desmay\monMenuBundle\Entity\Ustencile implements \Doctr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'idustencile', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'archive');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'archive', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'idustencile');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'idustencile', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'archive');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'archive', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Ustencile' . "\0" . 'idustencile');
     }
 
     /**
@@ -173,63 +173,4 @@ class Ustencile extends \Desmay\monMenuBundle\Entity\Ustencile implements \Doctr
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdustencile()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdustencile();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdustencile', array());
-
-        return parent::getIdustencile();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setWording($wording)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setWording', array($wording));
-
-        return parent::setWording($wording);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getWording()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getWording', array());
-
-        return parent::getWording();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setArchive($archive)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setArchive', array($archive));
-
-        return parent::setArchive($archive);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getArchive()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getArchive', array());
-
-        return parent::getArchive();
-    }
-
 }

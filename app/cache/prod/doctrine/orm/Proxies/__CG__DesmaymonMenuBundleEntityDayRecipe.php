@@ -64,10 +64,10 @@ class DayRecipe extends \Desmay\monMenuBundle\Entity\DayRecipe implements \Doctr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'iddayrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'nbrecipe');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'nbrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'iddayrecipe');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'iddayrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'nbrecipe');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'idrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'nbrecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\DayRecipe' . "\0" . 'iddayrecipe');
     }
 
     /**
@@ -173,85 +173,4 @@ class DayRecipe extends \Desmay\monMenuBundle\Entity\DayRecipe implements \Doctr
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIddayrecipe()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIddayrecipe();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIddayrecipe', array());
-
-        return parent::getIddayrecipe();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIdday($idday)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdday', array($idday));
-
-        return parent::setIdday($idday);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdday()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdday', array());
-
-        return parent::getIdday();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIdrecipe($idrecipe)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdrecipe', array($idrecipe));
-
-        return parent::setIdrecipe($idrecipe);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdrecipe()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdrecipe', array());
-
-        return parent::getIdrecipe();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setNbrecipe($nbrecipe)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNbrecipe', array($nbrecipe));
-
-        return parent::setNbrecipe($nbrecipe);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNbrecipe()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNbrecipe', array());
-
-        return parent::getNbrecipe();
-    }
-
 }

@@ -64,10 +64,10 @@ class Component extends \Desmay\monMenuBundle\Entity\Component implements \Doctr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'idcomponent', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'archive');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'archive', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'idcomponent');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'idcomponent', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'archive');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'archive', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Component' . "\0" . 'idcomponent');
     }
 
     /**
@@ -173,63 +173,4 @@ class Component extends \Desmay\monMenuBundle\Entity\Component implements \Doctr
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdcomponent()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdcomponent();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdcomponent', array());
-
-        return parent::getIdcomponent();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setWording($wording)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setWording', array($wording));
-
-        return parent::setWording($wording);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getWording()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getWording', array());
-
-        return parent::getWording();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setArchive($archive)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setArchive', array($archive));
-
-        return parent::setArchive($archive);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getArchive()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getArchive', array());
-
-        return parent::getArchive();
-    }
-
 }

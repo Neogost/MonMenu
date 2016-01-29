@@ -64,10 +64,10 @@ class Type extends \Desmay\monMenuBundle\Entity\Type implements \Doctrine\ORM\Pr
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Type' . "\0" . 'idtype', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Type' . "\0" . 'wording');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Type' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Type' . "\0" . 'idtype');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Type' . "\0" . 'idtype', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Type' . "\0" . 'wording');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Type' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Type' . "\0" . 'idtype');
     }
 
     /**
@@ -173,41 +173,4 @@ class Type extends \Desmay\monMenuBundle\Entity\Type implements \Doctrine\ORM\Pr
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdtype()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdtype();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdtype', array());
-
-        return parent::getIdtype();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setWording($wording)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setWording', array($wording));
-
-        return parent::setWording($wording);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getWording()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getWording', array());
-
-        return parent::getWording();
-    }
-
 }

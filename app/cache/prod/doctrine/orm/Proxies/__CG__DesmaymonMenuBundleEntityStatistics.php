@@ -64,10 +64,10 @@ class Statistics extends \Desmay\monMenuBundle\Entity\Statistics implements \Doc
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'idstatistics', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'iduser', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbreporting', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbcreaterecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbvisit');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'iduser', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbreporting', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbcreaterecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbvisit', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'idstatistics');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'idstatistics', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'iduser', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbreporting', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbcreaterecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbvisit');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'iduser', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbreporting', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbcreaterecipe', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'nbvisit', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Statistics' . "\0" . 'idstatistics');
     }
 
     /**
@@ -173,107 +173,4 @@ class Statistics extends \Desmay\monMenuBundle\Entity\Statistics implements \Doc
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdstatistics()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdstatistics();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdstatistics', array());
-
-        return parent::getIdstatistics();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIduser($iduser)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIduser', array($iduser));
-
-        return parent::setIduser($iduser);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getIduser()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIduser', array());
-
-        return parent::getIduser();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setNbreporting($nbreporting)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNbreporting', array($nbreporting));
-
-        return parent::setNbreporting($nbreporting);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNbreporting()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNbreporting', array());
-
-        return parent::getNbreporting();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setNbcreaterecipe($nbcreaterecipe)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNbcreaterecipe', array($nbcreaterecipe));
-
-        return parent::setNbcreaterecipe($nbcreaterecipe);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNbcreaterecipe()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNbcreaterecipe', array());
-
-        return parent::getNbcreaterecipe();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setNbvisit($nbvisit)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNbvisit', array($nbvisit));
-
-        return parent::setNbvisit($nbvisit);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNbvisit()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNbvisit', array());
-
-        return parent::getNbvisit();
-    }
-
 }

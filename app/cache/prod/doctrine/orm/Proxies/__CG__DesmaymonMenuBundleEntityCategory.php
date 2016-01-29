@@ -64,10 +64,10 @@ class Category extends \Desmay\monMenuBundle\Entity\Category implements \Doctrin
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'idcategory', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'archive');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'archive', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'idcategory');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'idcategory', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'archive');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'archive', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Category' . "\0" . 'idcategory');
     }
 
     /**
@@ -173,21 +173,6 @@ class Category extends \Desmay\monMenuBundle\Entity\Category implements \Doctrin
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdcategory()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdcategory();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdcategory', array());
-
-        return parent::getIdcategory();
-    }
-
     /**
      * {@inheritDoc}
      */

@@ -64,10 +64,10 @@ class Day extends \Desmay\monMenuBundle\Entity\Day implements \Doctrine\ORM\Prox
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Day' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Day' . "\0" . 'wording');
+            return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Day' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Day' . "\0" . 'idday');
         }
 
-        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Day' . "\0" . 'idday', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Day' . "\0" . 'wording');
+        return array('__isInitialized__', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Day' . "\0" . 'wording', '' . "\0" . 'Desmay\\monMenuBundle\\Entity\\Day' . "\0" . 'idday');
     }
 
     /**
@@ -173,41 +173,4 @@ class Day extends \Desmay\monMenuBundle\Entity\Day implements \Doctrine\ORM\Prox
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdday()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdday();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdday', array());
-
-        return parent::getIdday();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setWording($wording)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setWording', array($wording));
-
-        return parent::setWording($wording);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getWording()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getWording', array());
-
-        return parent::getWording();
-    }
-
 }

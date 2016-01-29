@@ -173,19 +173,4 @@ class Week extends \Desmay\monMenuBundle\Entity\Week implements \Doctrine\ORM\Pr
     }
 
     
-    /**
-     * {@inheritDoc}
-     */
-    public function getIdweek()
-    {
-        if ($this->__isInitialized__ === false) {
-            return (int)  parent::getIdweek();
-        }
-
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdweek', array());
-
-        return parent::getIdweek();
-    }
-
 }
