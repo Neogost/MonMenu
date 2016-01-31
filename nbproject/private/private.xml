@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/Neogost/Sites/MonMenu/app/Resources/views/base.html.twig</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/app/config/parameters.yml</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/src/Desmay/monMenuBundle/Resources/views/header.html.twig</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/app/config/config.yml</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/src/Desmay/UserBundle/Entity/User.php</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/src/Desmay/monMenuBundle/Resources/views/footer.html.twig</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/src/Desmay/monMenuBundle/Resources/views/Layout.html.twig</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/src/Desmay/UserBundle/Resources/views/Security/login.html.twig</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/src/Desmay/monMenuBundle/Resources/views/nav.html.twig</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/src/Desmay/monMenuBundle/Resources/views/Menu/index.html.twig</file>
+            <file>file:/Users/Neogost/Sites/MonMenu/app/Resources/TwigBundle/views/Exception/error404.html.twig</file>
+        </group>
+    </open-files>
+</project-private>

@@ -27,6 +27,10 @@
     <ul class="right hide-on-med-and-down">
         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
             <li>{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |</li>
+            <li><a href="">
+                    My Profil
+                </a>
+            </li>
             <li><a href="{{ path('fos_user_security_logout') }}">
                     {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                 </a></li>
@@ -46,6 +50,10 @@
     <ul id="slide-out" class="side-nav">
         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
             {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+            <li><a href="">
+                    My Profil
+                </a>
+            </li>
             <li><a href="{{ path('fos_user_security_logout') }}">
                     {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
                 </a></li>

@@ -1,0 +1,20 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+
+    <div class="row">
+        <div class="col s6 offset-s3">
+            <div class="card red accent-2 darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Page not found</span>
+                    <p>The requested page couldn't be located.</p>
+                </div>
+                <div class="card-action">
+                    <a href="{{ path('mon_menu_homepage') }}">Home Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
